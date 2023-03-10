@@ -17,328 +17,392 @@ font-style: normal;
 font-weight: normal;
 }
 
-/* Временно */
-a[title="Instagram"],
-a[title="Facebook"],
-a[title="Whatsup"],
-a[title="LinkedIn"],
-a[title="Behance"] {
-  display: none !important;
-}
 
 html, body {height:100%;}
 body {
-  margin:0;
-  font-family: Arial, Helvetica, sans-serif;
-  color:white;
-  background-color:black;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    background-color:#111111;
+    background-image: url(pic/desktop.png), url(pic/desktop2.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center -500px, left bottom;
 }
+
+#EnterDesk,
+#EnterMobi,
+#Portfolio,
+#About,
+#Advantages,
+#Services,
+#Testimonials,
+#OurTeam,
+#Contacts
+{overflow-x:hidden; margin: 0 auto;}
+
 .green {color: #20EB00;}
-section {overflow-x:hidden; margin: 0 auto;}
-h1 {display:none;}
 .mobi {display:none !important;}
 a  {color:inherit; text-decoration:inherit;}
 .anchor {display:block; visibility:hidden; position:relative;}
-#portfolio_ {top:-60px;}
-#services_ {top:50px;}
+#toServices {top:-120px;}
 
 .fix {
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-  background-color: rgba(0, 0, 0, 0.74);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.74);
 }
 .desk {
-  display: flex;
-  height: 81px;
-  margin: 0 auto;
-  width: 98%;
-  max-width: 1220px;
-  position: relative;
+    display: flex;
+    justify-content: center;
+    height: 81px;
+    margin: 0 auto;
 }
-.goHome {margin: auto auto auto 0; line-height:0;}
+.goHome {margin: auto 4rem auto auto; line-height:0;}
 #dPicLogo {width:48px; height:54px;}
-nav    {
-  display:flex; justify-content: space-between;
-  margin:auto;
-  width: 55%;
-  font-family: "Grotesque", Arial, sans-serif;
-  font-size: 13px;
+.desk nav    {
+    display:flex;
+    justify-content: center;
+    margin: auto 0;
+    font-family: "Grotesque", Arial, sans-serif;
+    font-size: 13px;
 }
-nav *  {margin:auto;}
-nav *:first-child  {margin:auto auto auto 0;}
-nav *:last-child  {margin:auto 0 auto auto;}
-nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10px 0;}
-.soc   {display:flex; width:90px; margin:auto; justify-content: space-between; align-items: center;}
-.underLang {width:45px; margin: auto 0;}
+.desk nav a {
+    margin: auto 4rem auto 0;
+    white-space: nowrap;
+}
+.desk nav a:last-child  {margin:auto 0;}
+.desk nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10px 0;}
+.soc {
+    display: flex;
+    margin: auto 4rem;
+    align-items: center;
+}
+.soc a {margin-right: 15px;}
+.soc a:last-child {margin-right: 0;}
+.underLang {
+    position: relative;
+    width: 45px;
+    height: 100%;
+    margin: auto auto auto 0;
+}
 .lang   {
-  position: absolute;
-  right: 0;
-  top: 25%;
-  width: 2.7em;
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid white;
-  border-radius: 20px;
-  font-size: 90%;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    width: 2.7em;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 90%;
 }
 .langEN {color:#20EB00; margin:10px 10px 10px 10px;}
 .langNL { margin: 5px 10px 10px 11px; display:none;}
 .dsp {display:block !important;}
 
 #contact3, #contact4, #contact5   {width:20px; height:20px;}
-.underFix   {height:81px;}
 
 .openedMenu {display:none;}
 
-#enterDesk   {background:black; position:relative;}
-#video    {width:100%; height:auto;}
-#enterMobi   {display:none;}
-
-.bg {                         /* BACKGROUNDS */
-  background-image:
-    url(pic/bg03.png),        /* черно-зеленый крест слева */
-    url(pic/bg04.png),        /* малый светящийся крест правее */
-    url(pic/bg05.png),        /* кресты справа */
-    url(pic/bg02.png),        /* шар подсветки волн */
-    url(pic/bg01.png),        /* волны под картинками портфолио */
-    url(pic/mapDots.png),  /* точки на карте */
-    url(pic/map.png),         /* карта в about */
-    url(pic/bg07.png),        /* зеленый крест слева от Advntgs */
-    url(pic/bg06.png),        /* серый фон этого креста */
-    url(pic/bg11.png),        /* крест для головы */
-    url(pic/bg10.png),        /* шар подсветки головы */
-    url(pic/bg08.png),        /* голова в Advntgs */
-    url(pic/bg09.png),        /* сетка для головы */
-    url(pic/bg14.png),        /* сетка для Сервисов */
-    url(pic/bg12.png),        /* подсветка зеленого креста для Сервисов */
-    url(pic/bg15.png),        /* зеленый крест для Сервисов */
-    url(pic/bg17.png),        /* зеленый крест после Сервисов */
-    url(pic/bg16.png),        /* серый крест после Сервисов */
-    url(pic/bg18.png);        /* скульптура */
-  background-position:
-    137px 901px,     /* черно-зеленый крест слева */
-    337px 1120px,   /* малый светящийся крест правее */
-    923px 958px,     /* кресты справа */
-    0px 100px,         /* шар подсветки волн */
-    0px -200px,        /* волны под картинками портфолио */
-    280px 1550px,    /* точки на карте */
-    center 1505px,    /* карта в about */
-    80px 2000px,      /* зеленый крест слева от Advntgs */
-    0px 1945px,        /* серый фон этого креста */
-    1250px 2510px,   /* крест для головы */
-    300px 1950px,     /* шар подсветки головы */
-    709px 2143px,     /* голова в Advntgs */
-    709px 2143px,     /* сетка для головы */
-    220px 3085px,     /* сетка для Сервисов */
-    0px 2140px,         /* подсветка зеленого креста для Сервисов */
-    60px 2980px,       /* зеленый крест для Сервисов */
-    1235px 3620px,    /* зеленый крест после Сервисов */
-    1235px 3560px,    /* серый крест после Сервисов */
-    0px 4340px;          /* скульптура */
-  background-size:
-    198px,        /* черно-зеленый крест слева */
-    91px,          /* малый светящийся крест правее */
-    402px,        /* кресты справа */
-    auto,           /* шар подсветки волн */
-    auto,           /* волны под картинками портфолио */
-    547px,        /* точки на карте */
-    1045px,       /* карта в about */
-    164px,         /* зеленый крест слева от Advntgs */
-    231px,         /* серый фон этого креста */
-    167px,         /* крест для головы */
-    1165px,       /* шар подсветки головы */
-    740px,         /* голова в Advntgs */
-    740px,         /* сетка для головы */
-    1000px,       /* сетка для Сервисов */
-    1354px,       /* подсветка зеленого креста для Сервисов */
-    242px,         /* зеленый крест для Сервисов */
-     110px,        /* зеленый крест после Сервисов */
-    212px,         /* серый крест после Сервисов */
-    674px;         /* скульптура */
-  background-repeat:no-repeat;
-  margin: 0 auto;
+#EnterDesk   {
+    height: 100vh;
+    overflow: hidden;
+    background:black;
 }
+#video    {
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 100vh;
+}
+#EnterMobi   {display:none;}
 
-.portfBigPicLink1 {display: none;}
-.portfPic {box-shadow: 0px 0px 10px 0px #20EB00;}
-.portfBigPic {box-shadow: 1px 1px 10px 1px #20EB00;}
-.portfolio a, .portfolio img {border-radius: 30px;}
-.portfRow1, .portfRow2, .portfRow3 {
+#Portfolio {
     display: flex;
-    justify-content: space-evenly;
-    margin: 25px auto 0 auto;
+    justify-content: center;
+    margin-top: 90px;
+    padding-top: 10px;  /* для показа свечения */
 }
-.portfRow1 a:hover, .portfRow2 a:hover, .portfRow3 a:hover {
-  opacity: 0.65;
+#Portfolio a, #Portfolio img {border-radius: 15px;}
+.portfPic {
+    width: 319px;
+    height: 198px;
+    box-shadow: 0px 0px 10px 0px #20EB00;
 }
-.portfRow3 {margin-bottom: 7px;}
-.portfPic {width: 320px;}
-.portfBigPic {width: 670px; height: 390px;}
-.portfRowColumn {
+.portfBigPic {
+    width: 668px;
+    height: 430px;
+    text-align: center;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px 1px #20EB00;
+}
+
+.grid {
+    display: grid;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas:
+    "sm1 sm2 sm3 sm4"
+    "sm5 big big sm6"
+    "sm7 big big sm8"
+    "sm9 sm10 sm11 sm12";
+    text-align: center;
+}
+.smallPlace2   {display: block; grid-area: sm2;}
+.smallPlace1   {display: block; grid-area: sm1;}
+.smallPlace3   {display: block; grid-area: sm3;}
+.smallPlace4   {display: block; grid-area: sm4;}
+.smallPlace5   {display: block; grid-area: sm5;}
+.smallPlace6   {display: block; grid-area: sm6;}
+.smallPlace7   {display: block; grid-area: sm7;}
+.smallPlace8   {display: block; grid-area: sm8;}
+.smallPlace9   {display: block; grid-area: sm9;}
+.smallPlace10 {display: block; grid-area: sm10;}
+.smallPlace11 {display: block; grid-area: sm11;}
+.smallPlace12 {display: block; grid-area: sm12;}
+.bigPlace        {display: block; grid-area: big;}
+
+.h2 {
+    font-family: "KyivBold", Arial, Helvetica, sans-serif;
+    font-size: 52px;
+}
+.aboutPart1 {
+    border: 1px solid transparent;
+    background-image:
+        url(pic/bg03.png),        /* черно-зеленый крест слева */
+        url(pic/bg04.png),        /* малый светящийся крест правее */
+        url(pic/bg05.png);        /* кресты справа */
+    background-position:
+        137px 50px,               /* черно-зеленый крест слева */
+        337px 270px,             /* малый светящийся крест правее */
+        923px 108px;             /* кресты справа */
+    background-size:
+        198px,                       /* черно-зеленый крест слева */
+        91px,                         /* малый светящийся крест правее */
+        402px;                       /* кресты справа */
+    background-repeat:no-repeat;
+    max-width:1440px;
+    margin: 0 auto;
+    padding-bottom: 230px;
+}
+.aboutPart2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
-.h2 {
-  font-family: "KyivBold", Arial, Helvetica, sans-serif;
-  font-size: 50px;
-}
-.about {
-  color: white;
-  text-align: center;
+#About {
+    color: white;
+    text-align: center;
 }
 .about1 {margin-top: 168px;}
-.about2 {margin-top: 230px;}
 #letsButton {
-  display: flex;
-  font-family: "KyivMedium", Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  width: 240px;
-  height: 60px;
-  margin: 50px auto 20px auto;
-  background-image: linear-gradient(to right, #17CA26, #089368);
-  border-radius: 30px;
+    display: flex;
+    font-family: "KyivMedium", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    width: 237px;
+    height: 58px;
+    margin: 60px auto auto auto;
+    background-image: linear-gradient(to right, #17CA26, #089368);
+    border-radius: 15px;
 }
 .letsButtonHover {box-shadow: 0px 0px 30px 0px #33FF13; cursor: pointer;}
-#letsButton span {margin: 15px auto; user-select: none;}
+#letsButton span {margin: auto auto 15px auto; user-select: none;}
 .img_about {width: 28px;}
-.aboutContent {
-  display: flex;
-  max-width: 750px;
-  margin: 108px auto 80px auto;
+.aboutBackground {
+    background-image:
+        url(pic/net.png),           /* сетка в About */
+        url(pic/map.png);         /* карта в About */
+    background-position:
+        center 30px,                 /* сетка в About */
+        center 30px;                 /* карта в About */
+    background-size:
+        1434px,                       /* сетка в About */
+        1084px;                       /* карта в About */
+    background-repeat:no-repeat;
 }
-.aboutContentColumn1 {width: 445px;}
+.aboutContent {
+    display: flex;
+    width: 750px;
+    margin: 108px auto 80px auto;
+}
+.aboutContentColumn1 {
+    width: 445px;
+}
 .aboutContentColumn2 {
-  width: 230px;
-  margin-left: auto;
+    width: 230px;
+    margin-left: auto;
 }
 .aboutContentHeader {
-  display: flex;
-  align-items: center;
-  font-family: "KyivMedium", Arial, Helvetica, sans-serif;
-  font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "KyivMedium", Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 .aboutContentHeader div {margin-left: 10px;}
 .aboutContentTxt {
-  text-align: left;
-  font-family: Verdana, sans-serif;
-  font-size: 13px;
+    text-align: left;
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
 }
 .aboutContentTxt ul {
-  margin-top: 20px;
-  padding-left: 25px;
+    margin-top: 20px;
+    padding-left: 25px;
 }
 .aboutContentTxt li {line-height: 1.5;}
 .aboutStat {
-  display: flex;
-  justify-content: space-between;
-  max-width: 870px;
-  margin: 0 auto;
-  font-family: "Grotesque", Arial, sans-serif;
-  font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    width: 870px;
+    margin: 0 auto;
+    font-family: "Grotesque", Arial, sans-serif;
+    font-size: 13px;
 }
 .aboutStatColumnHeader {
-  font-family: "KyivMedium", Arial, Helvetica, sans-serif;
-  font-size: 32px;
-  margin-bottom: 10px;
+    font-family: "KyivMedium", Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    margin-bottom: 10px;
+}
+#Advantages {
+    background-image:
+    url(pic/bg11.png),     /* крест для головы */
+    url(pic/bg08.png),     /* голова в Advntgs */
+    url(pic/bg09.png);     /* сетка для головы */
+    background-position:
+    1250px 610px,           /* крест для головы */
+    709px 240px,              /* голова в Advntgs */
+    709px 240px;              /* сетка для головы */
+    background-size:
+    163px,                     /* крест для головы */
+    734px,                     /* голова в Advntgs */
+    734px;                     /* сетка для головы */
+    background-repeat:no-repeat;
 }
 .advn1 {
-  text-align: center;
-  margin-top: 170px;
+    text-align: center;
+    margin-top: 170px;
 }
 .advnContent {
-  display: flex;
-  max-width: 960px;
-  margin: 90px auto 0 auto;
-  font-family: "Grotesque", Arial, sans-serif;
-  font-size: 13px;
-  text-align: center;
+    display: flex;
+    max-width: 900px;
+    margin: 90px auto 205px auto;
+    font-family: "Grotesque", Arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
 }
 .advnLeftColumn {
-  width: 415px;
+    width: 415px;
 }
 .advnTopBlock {
-  display: flex;
-  align-items: center;
-  width: 412px;
-  height: 97px;
-  border: 1px solid #20EB00;
-  border-radius: 50px;
-  margin-bottom: 45px;
-}
-.advnTopBlock img {
-  width: 67px;
-  height: 65px;
-  margin-left: 35px;
+    display: flex;
+    width: 409px;
+    height: 94px;
+    border: 1px solid #20EB00;
+    border-radius: 15px;
+    margin-bottom: 60px;
 }
 .advnTopBlock div {
-  width: 47%;
-  margin-left: 45px;
+    width: 47%;
+    margin-left: 45px;
+    margin: auto;
 }
 .advnRow {
-  display: flex;
-  margin-bottom: 30px;
+    display: flex;
+    margin-bottom: 30px;
 }
 .advnRowColumn {
-  width: 50%;
+    width: 50%;
 }
-.advnRowColumn div {
-  padding: 0 15px;
+.columnBetween {
+    width: 110px;
 }
-.advnRowImg {
-  width: 98px;
-  height: 98px;
+.iPic {
+    width: 66px !important;
+    height: 66px;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 15px auto;
 }
-.txt4 {
-  padding: 0 10px !important;
+.i01 {
+    background-image: url(pic/i01.png);
+    width: 75px !important;
+    height: 75px;
+    margin: auto 0 auto 30px !important;
+}
+.i02 {background-image: url(pic/i02.png); background-size: 180%;}
+.i03 {background-image: url(pic/i03.png);}
+.i04 {background-image: url(pic/i04.png);}
+.i05 {background-image: url(pic/i05.png);}
+
+.advnText {
+  padding: 0;
+}
+#Services {
+    background-image:
+    url(pic/bg14.png),     /* сетка для Сервисов */
+    url(pic/bg15.png),     /* зеленый крест для Сервисов */
+    url(pic/bg17.png),     /* зеленый крест после Сервисов */
+    url(pic/bg16.png);     /* серый крест после Сервисов */
+    background-position:
+    0 50px,                     /* сетка для Сервисов */
+    30px 10px,                /* зеленый крест для Сервисов */
+    1220px 670px,          /* зеленый крест после Сервисов */
+    1220px 610px;          /* серый крест после Сервисов */
+    background-size:
+    1434px,                    /* сетка для Сервисов */
+    242px,                      /* зеленый крест для Сервисов */
+    110px,                      /* зеленый крест после Сервисов */
+    212px;                      /* серый крест после Сервисов */
+    background-repeat: no-repeat;
 }
 .serv {
-  text-align: center;
-  margin: 188px auto 32px auto;
+    text-align: center;
+    margin: 0 auto 32px auto;
 }
 .servAnonse {
-  font-family: "Grotesque", Arial, sans-serif;
-  font-size: 13px;
-  text-align: center;
-  margin-bottom: 50px;
+    font-family: "Grotesque", Arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 .servContent {
-  max-width: 960px;
-  margin: 0 auto;
-  color: #4cda3f;
+    max-width: 960px;
+    margin: 0 auto  155px auto;
+    color: #4cda3f;
 }
 .servContentRow {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
 }
 .servContentPos {
-  text-align: center;
+    text-align: center;
 }
 .imgPtype1 {
-  width: 192px;
+    width: 192px;
 }
 .servContentPos2 {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 .imgPtype2 {
-  width: 160px;
+    width: 160px;
 }
 .servContentPos2 img {
-  margin: auto 0;
+    margin: auto 0;
 }
 .servContentPos2 div {
-  margin: 0;
+    margin: 0;
 }
+#toTestimonials {top: -150px;}
 .testmn {
-  text-align: center;
-  margin-top: 175px;
+    text-align: center;
+    margin-top: 90px;
 }
 
-/* Carousel */
 .owl-carousel.owl-drag .owl-item {-ms-touch-action: pan-y;touch-action: pan-y;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 .owl-carousel .owl-nav.disabled,  .owl-carousel .owl-nav .owl-prev,  .owl-carousel .owl-nav .owl-next,  .owl-carousel .owl-dot {cursor: pointer;user-select: none;}
 .owl-carousel .owl-item {
@@ -366,600 +430,993 @@ padding: 0 !important;
 font: 1px;
 }
 .owl-carousel .owl-nav button.owl-prev { /* кнопка Влево */
-width:17px; height:30px; background-image:url('pic/nleft.png');
+width:40px; height:41px; background-image:url('pic/nleft.png');
 }
 .owl-carousel .owl-nav button.owl-next { /* кнопка Вправо */
-width:17px; height:30px; background-image:url('pic/nright.png');
-}
-.protector {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  z-index: 1;
+width:40px; height:41px; background-image:url('pic/nright.png');
 }
 .folder {
-  position: relative;
-  width:1070px !important;
-  height:304px;
-  margin: 60px auto 0 auto;
-  overflow: hidden;
-  padding-left: 50px;
-  padding-right: 50px;
+    position: relative;
+    width:1070px !important;
+    height:304px;
+    margin: 60px auto 0 auto;
+    overflow: hidden;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .blocks {
-  width:100%;
-  height: 100%;
+    width:100%;
+    height: 100%;
 }
 .block {
-  width: 212px;
-  height: 300px;
-  border: 1px solid transparent;
-  border-radius: 30px;
-  background-color: transparent;
+    width: 212px;
+    height: 300px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: transparent;
 }
 .block img {
-  width: 155px !important;
-  margin: 0 auto;
+    width: 155px !important;
+    margin: 0 auto;
 }
 .blockTxt {
-  display: none;
-  font-family: "Grotesque", Arial, sans-serif;
-  font-size: 11px;
-  text-align: center;
-  padding: 10px 20px;
+    font-family: "Grotesque", Arial, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    padding: 10px 20px;
 }
 .blockActiv {
-  border: 1px solid #20EB00 !important;
-  background-color: black !important;
+    border: 1px solid #20EB00 !important;
+    background-color: black !important;
 }
-.blockTxtActiv {
-  display: block !important;
-}
-/* End: Carousel */
 
-.invite {
-  margin-top: 250px;
-  margin-right: 20%;
-  text-align: right;
+#OurTeam {
+    border: 1px solid transparent;
+    margin-top: 250px;
+    background-image:
+        url(pic/bg34.png),    /* большой крест слева от Команды */
+        url(pic/bg37.png);    /* двойной крест справа от Команды */
+    background-position:
+        90px 0px,                /* большой крест слева от Команды */
+        1250px 300px;         /* двойной крест справа от Команды */
+    background-size:
+        117px,                     /* большой крест слева от Команды */
+        152px;                     /* двойной крест справа от Команды */
+    background-repeat: no-repeat;
+}
+.ourteam {
+    text-align: center;
+}
+.folderTeam {
+    position: relative;
+    width:1070px !important;
+    margin: 40px auto 100px auto;
+    overflow: hidden;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.blockTeam {
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding-top: 10px;
+}
+.blockTeam img {
+    width: 170px !important;
+    margin: 0 auto;
+    border: 1px solid #20EB00;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #20EB00;
+}
+.blockTxtTeam {
+    font-family: "Grotesque", Arial, sans-serif;
+    text-align: center;
+    padding-top: 17px;
+}
+.teamName {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #20EB00;
+    margin-bottom: 3px;
+}
+.teamRole {
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+}
+
+#Contacts {
+    margin-top: 180px;
+    background-image:
+        url(pic/bg14.png),     /* сетка */
+        url(pic/bg30.png);     /* скульптура */
+    background-position:
+        0 50px,                     /* сетка */
+        -150px  bottom;        /* скульптура */
+    background-size:
+        1434px,                    /* сетка */
+        892px;                       /* скульптура */
+    background-repeat:no-repeat;
+}
+.empty {height: 150px;}
+.contactsContent {
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    margin-right: 100px;
 }
 .inviteHeader {
-  font-family: "KyivBold", Arial, Helvetica, sans-serif;
-  font-size: 37px;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .inviteTxt {
-  font-family: "Grotesque", Arial, sans-serif;
-  font-size: 21px;
+    font-family: "Grotesque", Arial, sans-serif;
+    font-size: 20px;
 }
 .AdviceButton {
-  display: flex;
-  font-family: "KyivMedium", Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  width: 240px;
-  height: 60px;
-  margin: 38px 0 0 auto;
-  background-image: linear-gradient(to right, #17CA26, #089368);
-  border-radius: 30px;
+    display: flex;
+    font-family: "KyivMedium", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    width: 233px;
+    height: 58px;
+    margin: 40px 0 130px auto;
+    background-image: linear-gradient(to right, #17CA26, #089368);
+    border-radius: 15px;
 }
-.AdviceButton span {margin: 15px auto; user-select: none;}
+.AdviceButton span {margin: 13px auto; user-select: none;}
 .AdviceButtonHover {box-shadow: 0px 0px 30px 0px #33FF13;}
-.contacts {
-  display: flex;
-  align-items: flex-end;
-  margin: 70px 11% 0 auto;
-  height: 258px;
-  color: white;
-  font-family: "KyivBold", Arial, Helvetica, sans-serif;
-  font-size: 22px;
+.diffLinks {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Grotesque", Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    color: white;
+}
+.TelMail, .bank, .part {
+    display: flex;
+    margin: 0 0 0 auto;
+}
+.TelMail {
+    margin-bottom: 30px;
+}
+.bank {
+    margin-bottom: 30px;
+}
+.part {
+    font-size: 20px;
+}
+.part a {
+    color: cornflowerblue;
 }
 .contactsTel {
-  margin: 0 90px 50px auto;
+    margin-right: 70px;
 }
 .contactsEmail {
-  margin: 0 90px 50px 0;
 }
 .contactsLinks {
-  margin: 0 20px 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 120px;
+    margin-bottom: 20px;
+    font-family: "KyivBold", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: white;
 }
 .contactsLinks > a {
-  display: block;
-  margin-top: 15px;
+    display: block;
+    margin-top: 15px;
 }
 .contactsLinks img {
-  width: 25px;
+    width: 25px;
 }
 
 
 /* Talk Form */
 
 #talkLayer {
-  display: none;
-  position: fixed;
-  top:0;right:0;bottom:0;left:0;
-  background: rgba(0, 0, 0, 0.75);
-  text-align: center;
-  z-index: 10;
+    display: none;
+    position: fixed;
+    top:0;right:0;bottom:0;left:0;
+    background: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    z-index: 10;
 }
 #talkLayer::before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 #talkForm {
-  display: inline-block;
-  vertical-align: middle;
-  background-color: white;
-  color: black;
-  width: 450px;
-  height: 475px;
-  border-radius: 25px;
-  box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 475px;
+    border-radius: 25px;
+    box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.3);
 }
 .formCloser {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
 }
 .formCloser img {
-  width: 20px;
-  height: 20px;
-  margin-right: 30px;
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
 }
 .formHeader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "KyivBold", Arial, sans-serif;
-  font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "KyivBold", Arial, sans-serif;
+    font-size: 24px;
 }
 .formHeader img {
-  width: 34px;
-  height: 34px;
-  margin-right: 10px;
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;
 }
 #formForm {
-  margin: 15px 50px 0 50px;
+    margin: 15px 50px 0 50px;
 }
 #uname, #uemail, #uphone {
-  display: block;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid silver;
-  font-size: 16px;
-  margin-top: 40px;
-  width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid silver;
+    font-size: 16px;
+    margin-top: 40px;
+    width: 100%;
 }
 #buttonSend {
-  width: 205px;
-  height: 55px;
-  color: white;
-  background-color: black;
-  border-radius: 30px;
-  font-size: 20px;
-  margin: 50px auto 30px auto;
-  cursor: pointer;
+    width: 205px;
+    height: 55px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 50px auto 30px auto;
+    cursor: pointer;
 }
 .formNote {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 /* End: Talk Form */
 
 
-/* Desktops */
-@media all and (min-width:1376px) {
-section, .bg {max-width:1440px !important;}
-} /* End: Desktops */
+/* Wide desktops    ====================================================== */
+@media all and (min-width:2160px) {
+
+    #video {width: 100%;}
+
+    .grid {
+        grid-column-gap: 20px;
+        grid-template-areas:
+        "sm1 sm2 big big big sm7 sm8"
+        "sm3 sm4 big big big sm9 sm10"
+        "sm5 sm6 big big big sm11 sm12";
+        width: 95vw;
+        margin: 0 auto;
+    }
+    .portfPic {
+        width: 12.5vw;
+        height: auto;
+    }
+    .portfBigPic {
+        width: 40vw;
+        height: auto;
+    }
+
+    .aboutPart2 {
+        flex-direction: row;
+        align-items: center;
+    }
+    .aboutContent {
+        margin: 108px auto 80px 100px;
+    }
+    .aboutBackground {
+        margin: 0 0 0 auto;
+        background-position:
+            -60px 30px,             /* сетка в About */
+            -60px 30px;             /* карта в About */
+    }
+
+    #Advantages {
+        margin-top: 200px;
+        background-image:
+        url(pic/bg08.png),          /* голова в Advntgs */
+        url(pic/bg09.png);          /* сетка для головы */
+        background-size:
+        734px,                           /* голова в Advntgs */
+        734px;                           /* сетка для головы */
+        background-position:
+        right 10% top 40px,        /* голова в Advntgs */
+        709px 40px;                  /* сетка для головы */
+    }
+    .advnContent {
+        display: block;
+        max-width: inherit;
+        margin: 140px auto 320px auto;
+    }
+    .advnLeftColumn {
+        display: flex;
+        width: auto;
+        margin-left: 10%;
+    }
+    .advnTopBlock {
+        display: block;
+        width: 165px;                                                 /* Ширина первого блочка в Advantages */
+        height: auto;
+        border: none;
+        margin-bottom: auto;
+    }
+    .advnTopBlock div {
+        width: auto;
+        margin-left: inherit;
+        margin: inherit;
+    }
+    .i01 {margin: 0 auto !important;}
+    .advnRow {
+        margin-bottom: 0;
+        margin-left: 50px;                                             /* Расстояние между блочками в Advantages */
+    }
+    .advnRowColumn {width: 165px;}                          /* Ширина блочков в Advantages */
+    .advnRowColumn:first-child {margin-right: 50px;}   /* Расстояние между блочками в Advantages */
+    .columnBetween {display: none;}
+
+    #toServices {top: -300px;}
+    #Services {
+        background-image:
+        url(pic/bg17.png),              /* зеленый крест после Сервисов */
+        url(pic/bg16.png);              /* серый крест после Сервисов */
+        background-size:
+        88px,                                 /* зеленый крест после Сервисов */
+        170px;                               /* серый крест после Сервисов */
+        background-position:
+        right 28% top 465px,          /* зеленый крест после Сервисов */
+        right 25% top 410px;          /* серый крест после Сервисов */
+    }
+    .servContent {
+        max-width: inherit;
+        display: flex;
+        justify-content: center;
+    }
+    .servContentPos, .servContentPos2 {
+        margin-right: 2vw;
+    }
+
+    #Testimonials {
+        margin-top: 50px;
+    }
+    .folder {
+        width:90% !important;
+        height:340px;
+    }
+    .block {
+        width: 190px;
+        height: 330px;
+    }
+
+    #OurTeam {
+        margin-top: 300px;
+        padding-bottom: 100px;
+        background-image:
+        url(pic/bg34.png),        /* большой крест слева от Команды */
+        url(pic/bg33.png),        /* малый крест слева от Команды */
+        url(pic/bg37.png);        /* двойной крест справа от Команды */
+        background-position:
+            28% 0px,                /* большой крест слева от Команды */
+            32% -5px,               /* малый крест слева от Команды */
+            right 20% top 400px;         /* двойной крест справа от Команды */
+        background-size:
+            80px,                      /* большой крест слева от Команды */
+            52px,                      /* малый крест слева от Команды */
+            152px;                    /* двойной крест справа от Команды */
+    }
+    .folderTeam {
+        width:90% !important;
+    }
+    .blockTeam {
+        width: 190px !important;
+    }
+
+    #Contacts {
+    max-width: 1700px;
+    background-image:
+        url(pic/bg14.png),        /* сетка */
+        url(pic/bg30.png);        /* скульптура */
+    background-position:
+        0 50px,                     /* сетка */
+        0px  bottom;             /* скульптура */
+    background-size:
+        1434px,                    /* сетка */
+        892px;                      /* скульптура */
+    }
+    .contactsContent {margin-right: 200px;}
+
+} /* End: Wide desktops    ================================================== */
 
 
-/* Pads */
-@media all and (min-width:768px) and (max-width:1375px) {
-.desk, section, .bg {max-width:1375px !important;}
-.portfRow1, .portfRow3 {
-  flex-wrap: wrap;
-  width: 700px;
-  margin: 0 auto;
-}
-.portfPic {margin-top: 20px;}
-.portfRow2 {
-  width: 700px;
-  margin: 0 auto;
-}
-.portfBigPicLink2 {display: none;}
-.portfBigPicLink1 {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-}
-.bg {                         /* BACKGROUNDS */
-  background-position:
-    137px 901px,     /* черно-зеленый крест слева */
-    337px 1120px,   /* малый светящийся крест правее */
-    923px 958px,     /* кресты справа */
-    0px 100px,         /* шар подсветки волн */
-    0px -200px,        /* волны под картинками портфолио */
-    280px 1550px,    /* точки на карте */
-    center 1505px,    /* карта в about */
-    80px 2000px,      /* зеленый крест слева от Advntgs */
-    0px 1945px,        /* серый фон этого креста */
-    1250px 2510px,   /* крест для головы */
-    300px 1950px,     /* шар подсветки головы */
-    709px 2143px,     /* голова в Advntgs */
-    709px 2143px,     /* сетка для головы */
-    220px 3085px,     /* сетка для Сервисов */
-    0px 2140px,         /* подсветка зеленого креста для Сервисов */
-    60px 2980px,       /* зеленый крест для Сервисов */
-    1235px 3620px,    /* зеленый крест после Сервисов */
-    1235px 3560px,    /* серый крест после Сервисов */
-    0px 5300px;          /* скульптура  ИЗМЕНЕНО */
-  background-size:
-    198px,        /* черно-зеленый крест слева */
-    91px,          /* малый светящийся крест правее */
-    402px,        /* кресты справа */
-    auto,           /* шар подсветки волн */
-    auto,           /* волны под картинками портфолио */
-    547px,        /* точки на карте */
-    1045px,       /* карта в about */
-    164px,         /* зеленый крест слева от Advntgs */
-    231px,         /* серый фон этого креста */
-    167px,         /* крест для головы */
-    1165px,       /* шар подсветки головы */
-    740px,         /* голова в Advntgs */
-    740px,         /* сетка для головы */
-    1000px,       /* сетка для Сервисов */
-    1354px,       /* подсветка зеленого креста для Сервисов */
-    24px,          /* зеленый крест для Сервисов  ИЗМЕНЕНО */
-     110px,        /* зеленый крест после Сервисов */
-    212px,         /* серый крест после Сервисов */
-    50%;           /* скульптура  ИЗМЕНЕНО */
-}
-.folder {
-  width: 642px !important;
-}
+/* Desktops    ========================================================= */
+@media all and (min-width:1440px) and (max-width:2159px) {
 
-} /* End: Pads */
+    #EnterMobi,
+    #About,
+    #Advantages,
+    #Services,
+    #Testimonials,
+    #OurTeam,
+    #Contacts
+    {max-width:1440px !important;}    /* ФИКСИРОВАННАЯ ШИРИНА ЦЕНТРА */
+
+} /* End: Desktops    ==================================================== */
 
 
-/* Mobiles */
+/* Pads ============================================================= */
+@media all and (min-width:768px) and (max-width:1439px) {
+
+    .desk,
+    #EnterDesk,
+    #EnterMobi,
+    #Portfolio,
+    #About,
+    #Advantages,
+    #Services,
+    #OurTeam,
+    #Contacts
+    {max-width:1439px !important;}
+
+    .soc {
+        width: 200px;
+        margin: auto 0 !important;
+        justify-content: center;
+        padding: 0 15px;
+    }
+    .soc a:last-child {margin-right: 0 !important;}
+    .underLang {min-width: 45px;}
+    .rightBorder {width: 20px;}
+
+    .goHome {
+        margin: auto 0 auto auto;
+        width: 112px;
+        padding-left: 20px;
+    }
+    #dPicLogo   {margin-right: auto;}
+    .desk nav    {width: 815px;}
+    .desk nav a {margin: inherit;}
+    .navBetween {
+        flex-grow: 1;
+        min-width: 15px;
+    }
+
+    .grid {
+        grid-template-areas:
+        "big big"
+        "big big"
+        "sm1 sm2"
+        "sm3 sm4"
+        "sm5 sm6"
+        "sm7 sm8"
+        "sm9 sm10"
+        "sm11 sm12";
+    }
+    .portfPic, .portfBigPic {height: auto;}
+
+    #toAdvantages {top: 30px}
+    #Advantages {
+        background-image:
+            url(pic/bg08.png),     /* голова в Advntgs */
+            url(pic/bg09.png);     /* сетка для головы */
+        background-size:
+            50%,                     /* голова в Advntgs */
+            50%;                     /* сетка для головы */
+        background-position:
+            right 0 top calc(1vw * -1 + 300px),              /* голова в Advntgs */
+            right 0 top calc(1vw * -1 + 300px);              /* сетка для головы */
+    }
+    .advnContent {
+        max-width: 920px;
+        padding-left: 20px;
+    }
+
+    .folder, .folderTeam {
+        width:700px !important;
+        height:auto;
+    }
+
+    #Contacts {
+        background-size:
+            1434px,                    /* сетку не трогаем */
+            60%;                        /* скульптура */
+        background-position:
+            0 50px,                     /* сетку не трогаем */
+            -12vw  bottom;          /* скульптура */
+    }
+
+    .diffLinks {background-color: rgba(0, 0, 0, 0.3);}
+
+} /* End: Pads    ======================================================= */
+
+
+/* Mobiles    ========================================================== */
 @media all and (max-width:767px) {
-section, .bg {max-width:767px !important;}
-section {
-  display: inherit !important;
-  position: relative;
-  min-height: 100% !important;
-  height: auto !important;
-}
-.desk {display:none !important;}
-.mobi {
-  display: flex !important;
-  height: 65px;
-  max-width: 767px;
-}
-.underFix   {display:none !important;}
-#logom {width:48px; height:54px;}
-.goHomeM {margin: auto auto auto 20px; line-height: 0;}
-#menu {
-  display: block !important;
-  width: 58px;
-  height: 58px;
-  margin: auto 10px auto auto;
-}
-.opened {
-  display: block;
-  width: 100%;
-  height: 990px;
-  background-color: black;
-  background-image: url(pic/fonMenu.png);
-  background-position: 0 80px;
-  position: absolute;
-  top: 65px;
-  left: 0;
-  font-size: 19px;
-}
-.navMenu {
-  height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.navLine {
-  border-bottom: solid 2px black;
-  margin-top: 40px;
-}
-.navLine:hover,  .navLine:active {
-  border-bottom-color: #20EB00;
-  color: #20EB00;
-}
-.ln {
-  margin-top: auto;
-}
-.lnEN {color:#20EB00; margin-right: 30px;}
 
-.h2 {font-size: 21px;}
-.about1 {margin-top: 97px !important;}
-.about2 {
-  margin-top: 100px;
-  font-size: 26px;
-}
-.advn1 {
-  margin: 110px auto 30px auto;
-  font-size: 26px;
-}
-.serv {
-  margin: 0 auto 12px auto;
-  font-size: 26px;
-}
-.testmn {
-  margin-top: 0;
-  font-size: 26px;
-}
-#letsButton {
-  width: 150px;
-  height: 40px;
-  margin: 20px auto 0 auto;
-  font-size: 16px;
-}
-#letsButton span {margin: 9px auto;}
-.aboutContent {
-  flex-direction: column;
-  margin: 35px auto 25px auto;
-}
-.aboutContentColumn1 {
-  width: 95vw;
-  padding: 0 10px;
-}
-.aboutContentColumn2 {
-  width: 95vw;
-  margin-left: 10px;
-}
-.aboutContentColumn2 .aboutContentHeader {
-  margin-top: 25px;
-}
-.aboutStat {
-  flex-direction: column;
-  height: 350px;
-  font-size: 15px;
-}
-.advnContent {
-  display: block;
-  max-width: 100vw;
-  margin: 0;
-  text-align: left;
-  font-size: 14px;
-}
-.advnLeftColumn {
-  width: 100vw;
-}
-.advnRow {
-  display: block;
-  margin-bottom: 0;
-}
-.advnRowColumn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  margin-top: 10px;
-}
-.advnRowColumn div {
-  padding: 0 10px;
-}
-.advnRowImg {
-  width: 65px;
-  height: auto;
-}
-.advnTopBlock {
-  border-radius: 0;
-  margin-bottom: 0;
-  border: none;
-  align-items: left;
-  width: 100vw;
-  height: auto;
-  font-size: 14px;
-}
-.advnTopBlock img {
-  width: 47px;
-  height: auto;
-  margin-left: 10px;
-}
-.advnTopBlock div {
-  width: auto;
-  margin-left: 20px;
-  padding-right: 5px;
-}
-#services_ {margin-top: 488px; top: -60px;}
-.servAnonse {
-  font-size: 14px;
-  margin: 0 auto;
-  width: 55vw;
-}
-.servContentRow {
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-.servContentPos,  .servContentPos2 {
-  width: 50vw;
-}
-#ttm_ {margin-top: 90px; top: -70px;}
-#cont_ {margin-top: 50px; top: -70px;}
-.invite {
-  margin-top: 0;
-  margin-right: 0;
-  text-align: center;
-}
-.inviteHeader {
-  font-size: 21px;
-  margin-bottom: 10px;
-}
-.inviteTxt {
-  font-size: 14px;
-}
-.AdviceButton {
-  font-size: 16px;
-  width: 150px;
-  height: 40px;
-  margin: 15px auto 0 auto;
-}
-.AdviceButton span {margin: 10px auto;}
-.contacts {
-  display: block;
-  margin: 50px 0 0 0;
-  height: auto;
-  font-size: 16px;
-  text-align: center;
-}
-.contactsTel {
-  margin: 0 auto;
-}
-.contactsEmail {
-  margin: 10px auto 0 auto;
-}
-.contactsLinks {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  margin: 0;
-  height: 380px;
-}
-.contactsLinks > a {
-  margin: 20px 20px 0 0;
-}
-.contactsLinks > a:last-child {
-  margin-bottom: 30px;
-}
+    body {
+        background-color:#101511;
+        background-image: url(pic/desktop.png);
+        background-repeat: no-repeat;
+        background-position: center -500px;
+    }
 
-#portfolio_ {top: 110px;}
-#about_ {top: 170px;}
-#enterDesk {display:none !important;}
-#enterMobi {
-  height: 100% !important;
-  min-height: 500px;
-  background: url(pic/fonm.png);
-  overflow: hidden;
-}
-.waveTop {
-  width: 100%;
-  max-width: 360px;
-  position: absolute;
-}
-.centerContent {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.cntBlock {
-  display: block;
-  margin: auto;
-  width: 263px;
-  height: 311px;
-}
-.waveBtm {
-  width: 100%;
-  max-width: 360px;
-  position: absolute;
-  top: auto;
-  bottom: -115px;
-  right: 0;
-}
-.portfRow1,
-.portfRow3 {
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0 auto;
-}
-.portfPic {margin-top: 10px; width: 170px;}
-.portfBigPicLink1 {
-  display: block;
-  padding: 15px 15px 0 15px;
-}
-.portfBigPic {width: 100%; height: auto;}
-.portfRow2 {width: 100%; margin: 0 auto;}
-.portfBigPicLink2 {display: none;}
-.portfPic,
-.portfBigPic {
-  box-shadow: 0px 0px 6px 0px #20EB00;
-}
-.portfolio a, .portfolio img {border-radius: 9px;}
-.folder {
-  width: 214px !important;
-}
-.bg {                         /* BACKGROUNDS */
-  background-image:
-    url(pic/bg19.png),         /* черно-зеленый крест слева */
-    url(pic/bg20.png),         /* волна слева от Lets talk */
-    url(pic/bg21.png),         /* зеленый крест справа */
-    url(pic/bg22.png),         /* бледно-зеленый крест ниже */
-    url(pic/bg23.png),         /* светлячки */
-    url(pic/bg24.png),         /* зеленый крест на бледном фоне */
-    url(pic/bg25.png),         /* фон для креста */
-    url(pic/bg26.png),         /* малый зеленый крест справа */
-    url(pic/bg27.png),         /* голова */
-    url(pic/bg28.png);         /* скульптура */
-  background-position:
-    0 900px,
-    0 740px,
-    right 5px top 1000px,
-    60px 1080px,
-    0 1575px,
-    0 1940px,
-    0 1915px,
-    right 30px top 2018px,
-    0 2460px,
-    left 0px bottom 0px;
-  background-size:
-    82px,
-    359px,
-    39px,
-    70px,
-    352px,
-    91px,
-    101px,
-    36px,
-    360px,
-    360px;
-  background-repeat:no-repeat;
-  margin: 0;
-}
+    #EnterMobi,
+    #Portfolio,
+    #About,
+    #Advantages,
+    #Services,
+    #Testimonials,
+    #OurTeam,
+    #Contacts
+     {
+        max-width:767px !important;
+        display: inherit !important;
+        position: relative;
+        min-height: 100% !important;
+        height: auto !important;
+    }
 
-/* Talk Form */
+    .desk {display:none !important;}
+    #EnterDesk {display:none !important;}
+    .mobi {
+        display: flex !important;
+        height: 65px;
+        max-width: 767px;
+    }
+    #EnterMobi {
+        height: 100% !important;
+        min-height: 500px;
+        background: url(pic/fonm.png);
+        overflow: hidden;
+    }
+    .underFix   {display:none !important;}
+    #logom     {width:48px; height:54px;}
+    .goHomeM {margin: auto auto auto 20px; line-height: 0;}
+    #menu {
+        display: block !important;
+        width: 58px;
+        height: 58px;
+        margin: auto 10px auto auto;
+    }
+    .opened {
+        display: block;
+        width: 100%;
+        height: 990px;
+        background-color: black;
+        background-image: url(pic/fonMenu.png);
+        background-position: 0 80px;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        font-size: 19px;
+    }
+    .navMenu {
+        height: calc(100vh - 100px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navLine {
+        border-bottom: solid 2px black;
+        margin-top: 40px;
+    }
+    .navLine:hover,  .navLine:active {
+        border-bottom-color: #20EB00;
+        color: #20EB00;
+    }
+    .ln     {margin-top: auto;}
+    .lnEN {color:#20EB00; margin-right: 30px;}
 
-#talkLayer {
-  background: white;
-  text-align: left;
-}
-#talkLayer::before {content:none;}
-#talkForm {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  border-radius: 0;
-  box-shadow: none;
-}
-.formHeader {margin-top: 30px;}
-#formForm {margin: 15px 10px 0 10px;}
-#buttonSend {
-  display: block;
-  margin: 200px auto 20px auto;
-}
-.formNote {
-  width: 90vw;
-  margin: 0 auto;
-  text-align: center;
-}
+    .waveTop {
+        width: 100%;
+        max-width: 360px;
+        position: absolute;
+    }
+    .centerContent {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .cntBlock {
+        display: block;
+        margin: auto;
+        width: 263px;
+        height: 311px;
+    }
+    .waveBtm {
+        width: 100%;
+        max-width: 360px;
+        position: absolute;
+        top: auto;
+        bottom: -115px;
+        right: 0;
+    }
 
-/* End: Talk Form */
+    #toPortfolio {top: 0px;}
+    #Portfolio a, #Portfolio img {border-radius: 9px;}
+    .portfPic {
+        width: 45vw !important;
+        height: auto;
+        margin-top: 10px;
+    }
+    .portfBigPic {
+        width: 95vw !important;
+        height: auto;
+    }
+    .portfPic, .portfBigPic {box-shadow: 0px 0px 6px 0px #20EB00;}
+    .grid {
+        grid-row-gap: 3px;
+        grid-column-gap: 3px;
+        grid-template-areas:
+        "big big"
+        "big big"
+        "sm1 sm2"
+        "sm3 sm4"
+        "sm5 sm6"
+        "sm7 sm8"
+        "sm9 sm10"
+        "sm11 sm12";
+    }
 
-/* В моб.версии показываем отзывы постоянно */
-.block {
-  border: 1px solid #20EB00 !important;
-  background-color: black !important;
-}
-.blockTxt {
-  display: block !important;
-}
+    .aboutPart1 {
+        background-image:
+            url(pic/bg20.png),       /* волны слева */
+            url(pic/bg03.png),       /* черно-зеленый крест слева */
+            url(pic/bg22.png),       /* малый  крест правее */
+            url(pic/bg05.png);       /* кресты справа */
+        background-size:
+            350px,                       /* волны слева */
+            90px,                         /* черно-зеленый крест слева */
+            70px,                         /* малый  крест правее */
+            80px;                         /* кресты справа */
+        background-position:
+            0px -100px,                /* волны слева */
+            0px 20px,                   /* черно-зеленый крест слева */
+            60px 200px,                /* малый  крест правее */
+            right 5px top 110px;    /* кресты справа */
+        max-width: inherit;
+        padding-bottom: 100px;
+    }
+    #letsButton {
+        border-radius: 12px;
+        width: 150px;
+        height: 40px;
+        margin: 20px auto 0 auto;
+        font-size: 16px;
+    }
+    #letsButton span {margin: 9px auto;}
+    .h2 {font-size: 21px;}
+    #toAbout {top: 170px;}
+    .about1 {margin-top: 97px;}
+    .about2 {
+        margin-top: 0px;
+        font-size: 26px;
+    }
+    .aboutContent {
+        flex-direction: column;
+        margin: 35px auto 25px auto;
+    }
+    .aboutContentColumn1 {
+        width: 95vw;
+        padding: 0 10px;
+    }
+    .aboutContentColumn2 {
+        width: 95vw;
+        margin-left: 10px;
+    }
+    .aboutContentColumn2 .aboutContentHeader {margin-top: 15px;}
+    .aboutContentTxt ul {margin-top: 15px;}
+    .aboutBackground   {background-image: none;}
+    .aboutStat {
+        flex-direction: column;
+        width: 100vw;
+        height: 330px;
+        background-image:
+            url(pic/net.png),    /* сетка в About */
+            url(pic/map.png);   /* карта в About */
+        background-size:
+            850px,                   /* сетка в About */
+            650px;                   /* карта в About */
+        background-position:
+            0 0,                        /* сетка в About */
+            0 0;                        /* карта в About */
+        background-repeat:no-repeat;
+    }
+    .aboutStatColumnHeader {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
 
-} /* End: Mobiles */
+    #Advantages {
+        background-image:
+        url(pic/bg37.png),     /* кресты слева */
+        url(pic/bg26.png),     /* крестик справа */
+        url(pic/bg08.png),     /* голова в Advntgs */
+        url(pic/bg09.png);     /* сетка для головы */
+        background-size:
+        80px,                        /* кресты слева */
+        40px,                        /* крестик справа */
+        430px,                      /* голова в Advntgs */
+        430px;                      /* сетка для головы */
+        background-position:
+        0 0,                           /* кресты слева */
+        right 20px top 80px,   /* крестик справа */
+        center bottom -10px,  /* голова в Advntgs */
+        center bottom -10px;  /* сетка для головы */
+    }
+    .iPic {
+        min-width: 60px !important;
+        max-width: 60px !important;
+        height: 60px !important;
+        background-size: inherit;
+        margin: 0;
+    }
+    .i01 {
+        background-size: 180%;
+        margin: auto 0 auto 5px !important;
+    }
+    .i02 {
+        background-image: url(pic/i08.png);
+        background-size: 120%;
+    }
+    .i03 {
+        background-image: url(pic/i07.png);
+        background-size: 175%;
+        background-position: -5px;
+    }
+    .i04 {
+        background-image: url(pic/i06.png);
+        background-size: 160%;
+        background-position: 0px;
+    }
+    .i05 {
+        background-image: url(pic/i09.png);
+        background-size: 160%;
+        background-position: 0px;
+    }
+    .advn1 {
+        margin: 110px auto 15px auto;
+        font-size: 26px;
+    }
+    .serv {
+        margin: 0 auto 12px auto;
+        font-size: 26px;
+    }
+    .advnContent {
+        display: block;
+        max-width: 100vw;
+        margin: 0;
+        text-align: left;
+        font-size: 13px;
+        padding-bottom: 450px;
+    }
+    .advnLeftColumn {width: 100vw;}
+    .advnRow {
+        display: block;
+        margin-bottom: 0;
+    }
+    .advnRowColumn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        margin: 12px auto 0 5px;
+    }
+    .advnText, .advnTopBlockText {
+        padding: 0 10px;
+    }
+    .advnRowImg {
+        width: 65px;
+        height: auto;
+    }
+    .advnTopBlock {
+        border-radius: 0;
+        margin-bottom: 0;
+        border: none;
+        align-items: left;
+        width: 100vw;
+        height: auto;
+        font-size: 14px;
+    }
+    .advnTopBlock img {
+        width: 47px;
+        height: auto;
+        margin-left: 10px;
+    }
+    .advnTopBlock div {width: auto;}
+
+    #toServices {top: -60px;}
+    #Services {
+        background-image:
+        url(pic/bg17.png),     /* зеленый крест после Сервисов */
+        url(pic/bg16.png);     /* серый крест после Сервисов */
+        background-size:
+        50px,                      /* зеленый крест после Сервисов */
+        140px;                      /* серый крест после Сервисов */
+        background-position:
+        right 30px bottom 50px,          /* зеленый крест после Сервисов */
+        right -50px bottom 10px;          /* серый крест после Сервисов */
+    }
+    .servAnonse {
+        font-size: 14px;
+        margin: 0 auto;
+        width: 60vw;
+    }
+    .servContentRow {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .servContentPos,  .servContentPos2 {
+        width: 50vw;
+    }
+
+    #toTestimonials {margin-top: 90px; top: -150px;}
+    .testmn {
+        margin-top: 0;
+        font-size: 26px;
+    }
+    .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next { /* кнопки Влево и Вправо */
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 120px;
+    }
+    .owl-carousel .owl-nav button.owl-prev { /* кнопка Влево */
+        background-image: url('pic/nleftMob.png');
+    }
+    .owl-carousel .owl-nav button.owl-next { /* кнопка Вправо */
+        background-image: url('pic/nrightMob.png');
+    }
+    .folder {
+        padding: 0 40px;
+        width: 75vw !important;
+        height: auto;
+    }
+    .block {
+        border: 1px solid #20EB00 !important;
+        background-color: black !important;
+        width: 70vw;
+        height: 50vh;
+        margin: 0 auto;
+    }
+    .block img {width: 50vw !important;}
+    .blockTxt {font-size: 15px;}
+
+    #toOurTeam {top: -150px;}
+    #OurTeam {
+        margin-top: 0px;
+        background-image:
+            url(pic/bg34.png),        /* крест слева от Команды */
+            url(pic/bg37.png);        /* двойной крест справа от Команды */
+        background-size:
+            90px,                          /* крест слева от Команды */
+            130px;                        /* двойной крест справа от Команды */
+        background-position:
+            0px 0px,                     /* крест слева от Команды */
+            right -30px top 480px; /* двойной крест справа от Команды */
+    }
+    .ourteam {
+        font-size: 26px;
+        margin-top: 50px;
+    }
+    .folderTeam {
+        padding: 0 40px;
+        width: 75vw !important;
+        height: auto;
+    }
+    .blockTeam {
+        width: 70vw;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .blockTeam img {width: 100% !important;}
+
+    #OurTeam .owl-carousel .owl-nav button.owl-prev, /* кнопки Влево и Вправо */
+    #OurTeam .owl-carousel .owl-nav button.owl-next {
+        margin-top: 60px;
+    }
+    .teamName, .teamRole {font-size: 16px !important;}
+
+    #Contacts {
+        min-height: 0 !important;
+        margin-top: 0px;
+        background-image: none !important;
+    }
+    .empty {display: none;}
+    .contactsContent {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+    .inviteHeader {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .inviteTxt {
+        font-size: 16px;
+    }
+    .AdviceButton {
+        font-size: 16px;
+        width: 160px;
+        height: 46px;
+        margin: 20px auto 50px auto;
+    }
+    .diffLinks {
+        margin-bottom: 0;
+        display: block;
+        font-size: 17px;
+    }
+    .TelMail, .bank, .part {
+        display: block;
+        margin: 0;
+    }
+    .TelMail {margin-bottom: 10px;}
+    .bank {
+        margin-bottom: 0;
+        font-family: "KyivMedium", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+    .part {display: none;}
+    .contactsTel {margin: 0 auto 10px auto;}
+    .contactsLinks {
+        align-items: flex-end;
+        width: 100%;
+        margin: 0;
+        height: 410px;
+        background-image:
+        url(pic/bg14.png),     /* сетка */
+        url(pic/bg30.png);     /* скульптура */
+        background-size:
+            700px,                  /* сетка */
+            500px;                  /* скульптура */
+        background-position:
+            0 bottom,              /* сетка */
+            -150px  bottom;     /* скульптура */
+        background-repeat: no-repeat;
+    }
+    .contactsLinks > a {margin: 15px 25px 0 0;}
+    .contactsLinks > a:last-child {margin-bottom: 40px;}
+    .contactsLinks img {width: 30px;}
+
+    /* Talk Form */
+    #talkLayer {
+        background: white;
+        text-align: left;
+    }
+    #talkLayer::before {content:none;}
+    #talkForm {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .formHeader {margin-top: 30px;}
+    #formForm {margin: 15px 10px 0 10px;}
+    #buttonSend {
+        display: block;
+        margin: 200px auto 20px auto;
+    }
+    .formNote {
+        width: 90vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+    /* End: Talk Form */
+
+} /* End: Mobiles    ===================================================== */
