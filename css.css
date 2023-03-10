@@ -80,6 +80,8 @@ a  {color:inherit; text-decoration:inherit;}
 }
 .soc a {margin-right: 15px;}
 .soc a:last-child {margin-right: 0;}
+a[title="Instagram"] {display: none;}
+a[title="Facebook"]  {display: none;}
 .underLang {
     position: relative;
     width: 45px;
@@ -163,6 +165,8 @@ a  {color:inherit; text-decoration:inherit;}
 .smallPlace11 {display: block; grid-area: sm11;}
 .smallPlace12 {display: block; grid-area: sm12;}
 .bigPlace        {display: block; grid-area: big;}
+
+.grid a:hover {opacity: 0.65;}
 
 .h2 {
     font-family: "KyivBold", Arial, Helvetica, sans-serif;
@@ -580,6 +584,7 @@ width:40px; height:41px; background-image:url('pic/nright.png');
     margin-bottom: 30px;
 }
 .bank {
+    display: none !important;
     margin-bottom: 30px;
 }
 .part {
@@ -589,6 +594,7 @@ width:40px; height:41px; background-image:url('pic/nright.png');
     color: cornflowerblue;
 }
 .contactsTel {
+    display: none;
     margin-right: 70px;
 }
 .contactsEmail {
@@ -610,7 +616,8 @@ width:40px; height:41px; background-image:url('pic/nright.png');
 .contactsLinks img {
     width: 25px;
 }
-
+a[title="Whatsup"]  {display: none;}
+a[title="Facebook"] {display: none;}
 
 /* Talk Form */
 
@@ -938,7 +945,11 @@ width:40px; height:41px; background-image:url('pic/nright.png');
             -12vw  bottom;          /* скульптура */
     }
 
-    .diffLinks {background-color: rgba(0, 0, 0, 0.3);}
+        .contactsTel, .bank, .part {
+            padding: 0 20px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 30px/50px;
+        }
 
 } /* End: Pads    ======================================================= */
 
@@ -1263,7 +1274,7 @@ width:40px; height:41px; background-image:url('pic/nright.png');
         width: 50vw;
     }
 
-    #toTestimonials {margin-top: 90px; top: -150px;}
+    #toTestimonials {margin-top: 90px; top: -20vh;}
     .testmn {
         margin-top: 0;
         font-size: 26px;
@@ -1273,7 +1284,7 @@ width:40px; height:41px; background-image:url('pic/nright.png');
         height: 40px;
         background-repeat: no-repeat;
         background-position: center;
-        margin-top: 120px;
+        margin-top: 25%;
     }
     .owl-carousel .owl-nav button.owl-prev { /* кнопка Влево */
         background-image: url('pic/nleftMob.png');
@@ -1290,13 +1301,13 @@ width:40px; height:41px; background-image:url('pic/nright.png');
         border: 1px solid #20EB00 !important;
         background-color: black !important;
         width: 70vw;
-        height: 50vh;
+        height: auto;
         margin: 0 auto;
     }
     .block img {width: 50vw !important;}
     .blockTxt {font-size: 15px;}
 
-    #toOurTeam {top: -150px;}
+    #toOurTeam {top: -20vh;}
     #OurTeam {
         margin-top: 0px;
         background-image:
@@ -1332,6 +1343,7 @@ width:40px; height:41px; background-image:url('pic/nright.png');
     }
     .teamName, .teamRole {font-size: 16px !important;}
 
+    #toContactsMob {top: -100px;}
     #Contacts {
         min-height: 0 !important;
         margin-top: 0px;
@@ -1371,7 +1383,10 @@ width:40px; height:41px; background-image:url('pic/nright.png');
         font-family: "KyivMedium", Arial, Helvetica, sans-serif;
         font-size: 16px;
     }
-    .part {display: none;}
+    .part {
+        margin-top: 10px;
+        font-size: 16px;
+    }
     .contactsTel {margin: 0 auto 10px auto;}
     .contactsLinks {
         align-items: flex-end;
